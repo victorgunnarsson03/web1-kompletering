@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    height: 10vh;
+    width: 100vw;
+    background-color: blue;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttons{
+    padding: 1em;
+}
+
+.buttons:hover{
+    background-color: rgb(11, 11, 141);
+}
+
+.buttons:active{
+    background-color: rgb(100, 100, 236);
+}
+
+.buttons > a{
+    text-decoration: none;
+    color: black
+}
+
+.ContentContainer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+img{
+    width: 50%;
+}
+
+#div1{
+    /* width: 
+    height 
+    background-color */
+    float: left;
+}
+.bild{
+    width: 100px;
+    height: 100px;
+}
+table, tr, td{
+    border:1px solid black;
+}
