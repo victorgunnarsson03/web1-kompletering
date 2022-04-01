@@ -4,6 +4,7 @@
 }
 
 .navbar{
+    /* ger diven med klassen navbar en storlek och färger samt gör den till en flexbox för att centera dem på y-axeln och ger knapparna jämt utrymme mellan varandra */
     height: 10vh;
     width: 100vw;
     background-color: blue;
@@ -17,20 +18,14 @@
     padding: 1em;
 }
 
-.buttons:hover{
-    background-color: rgb(11, 11, 141);
-}
-
-.buttons:active{
-    background-color: rgb(100, 100, 236);
-}
-
 .buttons > a{
+    /* tar bort understräck och gör texten svart på alla anchors i element med classen button */
     text-decoration: none;
     color: black
 }
 
 .ContentContainer{
+    /* centerar content */
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -42,12 +37,38 @@ img{
     width: 50%;
 }
 
-#div1{
-    /* width: 
-    height 
-    background-color */
-    float: left;
-}
+input[type=text], textarea {
+    /* i alla input med typen text och messageboxen får dem rundare kanter och en ljus grå kontur */
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc; /* konturen */
+    border-radius: 4px; /* rundar kanterna */
+    box-sizing: border-box; /* gör så att dem håller sig inne i sin box */
+    margin-top: 6px; /* ger dem utrymme mellan varandra från toppen */
+    margin-bottom: 16px; /* ger dem utrymme mellan varandra från botten */
+  }
+  
+  input[type=submit] {
+    /* input typen submit får en blå backgrund med vit text med ingen kontur och rundare kanter */
+    background-color: #0444aa;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /* mus pekaren stannar som en pill när dem hover elementet */
+  }
+  
+  input[type=submit]:hover {
+    /* när musen är ovanför submit byter den färg*/
+    background-color: #2767cf;
+  }
+  
+  .contactInfo {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
 .bild{
     width: 100px;
     height: 100px;
